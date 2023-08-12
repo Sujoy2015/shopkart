@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add to Cart Page</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <!-- Bootstrap CSS -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous" />
+  <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/asset/css/AddToCart.css">
+  <script src="/asset/js/AddToCart.js" defer></script>
+</head>
+<body onload="getBusketData();">
+  <header class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light bg-primary head">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="javascript:void(0)">
+                <img src="/asset/images/logo/logo.png" alt="sorry" class="logo rounded-circle" onclick="mainPageRedirect();">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white pt-2 mx-2" href="#" role="button"
+                            data-bs-toggle="dropdown">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-x-diamond-fill icon1" viewBox="0 0 16 16">
+                                <path
+                                    d="M9.05.435c-.58-.58-1.52-.58-2.1 0L4.047 3.339 8 7.293l3.954-3.954L9.049.435zm3.61 3.611L8.708 8l3.954 3.954 2.904-2.905c.58-.58.58-1.519 0-2.098l-2.904-2.905zm-.706 8.614L8 8.708l-3.954 3.954 2.905 2.904c.58.58 1.519.58 2.098 0l2.905-2.904zm-8.614-.706L7.292 8 3.339 4.046.435 6.951c-.58.58-.58 1.519 0 2.098l2.904 2.905z" />
+                            </svg> Departments
+                        </a>
+                        <ul class="dropdown-menu">
+
+                            <li><a class="dropdown-item" href="#">Savings & Featured Shops</a></li>
+                            <li><a class="dropdown-item" href="/pages/ElectronicsMainPage.html">Electronics</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Grocery</a></li>
+
+                            <li><a class="dropdown-item" href="#">Clothing,Shoes and Accesories</a></li>
+                            <li><a class="dropdown-item" href="#">Home,Furniture & Appliances</a></li>
+                            <li><a class="dropdown-item" href="#">baby & Toys</a></li>
+                            <li><a class="dropdown-item" href="#">Home Improvement</a></li>
+
+                            <li><a class="dropdown-item" href="#">Pharmacy & Health Witness</a></li>
+                            <li><a class="dropdown-item" href="#">Sports</a></li>
+                            <li><a class="dropdown-item" href="#">Movie,Music & Books</a></li>
+                        </ul>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white pt-2 mx-2" href="#" role="button"
+                            data-bs-toggle="dropdown">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-columns icon2" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V2zm8.5 0v8H15V2H8.5zm0 9v3H15v-3H8.5zm-1-9H1v3h6.5V2zM1 14h6.5V6H1v8z" />
+                            </svg> Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Health Services</a></li>
+                            <li><a class="dropdown-item" href="#">Finnacial Services</a></li>
+                            <li><a class="dropdown-item" href="#">Community & Giving</a></li>
+                        </ul>
+                    </li>
+                    </li>
+
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control width .col-lg-*  search  mx-2" type="text" placeholder="Search">
+                    <!-- <button class="btn btn-primary" type="button">Search</button> -->
+                </form>
+                <ul class="navbar-nav ">
+                    <!-- <li class="nav-item">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white pt-2 mx-2 kuttarBacche" href="#" role="button"
+                            data-bs-toggle="dropdown" style="margin-top: 9px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-arrow-repeat icon3" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
+                                <path fill-rule="evenodd"
+                                    d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
+                            </svg> Reorder
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">Reorder</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Lists</a></li>
+                            <li><a class="dropdown-item" href="#">Register</a></li>
+                            <li><a class="dropdown-item" href="#">Purchase History</a></li>
+                        </ul>
+                    </li>
+                    </li> -->
+
+                    <li class="nav-item">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white pt-2 mx-2 kuttarBacche" href="#" role="button"
+                            data-bs-toggle="dropdown" style="margin-top: 9px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-person-fill icon4" viewBox="0 0 16 16">
+                                <path
+                                    d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                            </svg>
+                            <span id="signin">Sign In</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item " href="/pages/signin_page.html"><button type="button"
+                                        class="rounded-pill mx-2 my-1  px-3  btn btn-primary ">Sign In</button></a>
+                            </li>
+                            <li><a class="dropdown-item" href="/pages/registration_page.html"><button type="button"
+                                         class="rounded-pill mx-2 my-1  px-3  btn btn-primary ">Create An Account</button></a></li>
+                            
+                                         <li><a class="dropdown-item"><button type="button"
+                                            class="rounded-pill mx-2 my-1  px-3  btn btn-primary " onclick="signOut();">Sign Out</button></a></li>
+                        </ul>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <!-- hello -->
+
+                        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" style="margin-top: 10px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-bag-check-fill icon5" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                            </svg>
+                            Cart
+                        </button>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+  <div class="container">
+    <h1 class="fw-bold fs-2 text-primary text-uppercase">Shopping Cart</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Product</th>
+          <th scope="col">Product Details</th>
+          <th scope="col">Price</th>
+          <th scope="col">Quantity</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody class="cart-items" id="addToCartData">
+ 
+        <!-- <tr>
+            <td><img src="/asset/images/LandingPagePhoto/LedTv.jpg" alt="Product 1" id="cart-img-1"></td>
+          <td>Product 1</td>
+          <td id="productPriceInTable">₹10.00</td>
+          <td><input type="number" min="1" max="10" value="1" id="productQuantity"></td>
+          <td><button class="delete-button">Delete</button></td>
+        </tr>
+        <tr>
+            <td><img src="/asset/images/LandingPagePhoto/LedTv.jpg" alt="Product 1" id="cart-img-1"></td>
+          <td>Product 2</td>
+          <td id="productPriceInTable">₹20.00</td>
+          <td><input type="number" min="1" max="10" value="1" id="productQuantity"></td>
+          <td><button class="delete-button">Delete</button></td>
+        </tr>
+        <tr>
+          <td colspan="5" style="padding-left: 75%;">Total : ₹<span id="productTotalPrice">30.00</span></td>
+        </tr> -->
+      </tbody>
+    </table>
+    <div class="total-price-container">
+        <h4>Total Price: <span id="total-price">₹0.00</span></h4>
+      </div>
+    <!-- <p>Total: $<span id="total-price">30.00</span></p> -->
+    <div style="padding-left: 47%;">
+      <button id="checkout-button btn btn-primary" onclick="mainPageRedirect();">Continue Shooping</button>
+      <button id="checkout-button btn btn-primary">Proceed To Payment</button>
+    </div>
+ 
+  </div>
+
+
+	<footer class="text-center bg-primary part7  mt-lg-2 mt-md-1 mt-sm-1">
+    <div class="container p-4 text-light">
+
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+            class="bi bi-facebook"></i></i></a>
+
+        <!-- Twitter -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+            class="bi bi-twitter"></i></i></a>
+
+        <!-- Google -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+            class="bi bi-google"></i></i></a>
+
+        <!-- Instagram -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+            class="bi bi-instagram"></i></i></a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+            class="bi bi-linkedin"></i></i></a>
+
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i
+            class="bi bi-github"></i></i></a>
+      </section>
+      <section class="mb-4">
+        <span class="d-flex flex-row text-center row">
+          <div class="col-lg-4 f-d">
+            <p>All Departments</p>
+          </div>
+          <div class="col-lg-4 f-d">
+            <p>Privacy & Security</p>
+          </div>
+          <div class="col-lg-4 f-d">
+            <p>Sign up For Email</p>
+          </div>
+        </span>
+      </section>
+
+
+      <!-- Copyright -->
+      <div class="text-center p-3 text-light">
+        © 2020 Copyright:
+        <a class="text-white" href="#">ShopKart.com</a>
+      </div>
+      <!-- Copyright -->
+  </footer>
+
+</body>
+</html>
