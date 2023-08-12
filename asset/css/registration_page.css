@@ -1,0 +1,44 @@
+.register {
+    line-height: 32px;
+    margin-top: 88px;
+}
+
+.li label {
+    margin-left: 12px;
+}
+
+.pass {
+    float: left;
+}
+
+.check {
+    float: left;
+    margin-top: 12px;
+    margin-right: 11px;
+}
+
+.bn {
+    margin-top: 7px;
+    width: 293px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 29px;
+    /* background-color: dodgerblue; */
+    color: white;
+}
+
+.form {
+    border: 1px solid white;
+    border-radius: 43px;
+    width: 669px;
+    padding: 34px 25px;
+    margin: 0 auto;
+    background-color: #7fa9da;
+    color: white;
+    box-shadow: 2px 2px 2px grey;
+}
+
+.nano {
+    border-radius: 12px;
+    border: 1px white;
+}

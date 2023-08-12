@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+ }
+.myClass:hover {
+    text-decoration: underline;
+}
+
+.head {
+    font-size: 60px;
+}
+
+.head1 {
+    font-size: 17px;
+}
+
+.c-size{
+    width: 100%;
+    height:500px;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+.card-image{
+    text-align: center;
+}
+
+
+
+/* best selling electronics */
+@media screen and (min-width:568px){
+.cards-wrapper{
+    display:flex;
+}
+   
+.card{
+    margin:0 .5em;
+    width:calc(100%/3)
+ }
+ .image-wrapper{
+    height: 11vw;
+    margin:0 auto;
+    /* display:flex;
+    align-items: center;
+    justify-content: center; */
+}
+}
+ @media screen and (max-width:567px){
+    .card:not(:first-child){
+        display: none;
+    }
+    
+ }
+
+
+.image-wrapper img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.card{
+    border:none;
+    border-radius: 0;
+    box-shadow: 2px 6px 8px rgb(22,22,26,0.18);
+} 
+
+.carousel-inner{
+    padding: 1em;
+}
+
+.carousel-control-prev,.carousel-control-next{
+    background-color: #e1e1e1;
+    width:6vh;
+    height:6vh;
+    border-radius: 50%;
+    top:auto;
+    transform:translateY(-50%);
+}
+
+ .carousel-control-prev span,
+ .carousel-control-next span{
+    width:1.5em;
+    height:1.5em;
+
+}
+
+.add1 img{
+    max-width: 1457px;
+    max-height: 372px;
+    border-radius: 22px;
+}
+
+
+/* brand part */
+.img-box{
+    max-height: 100%;
+}
+
+.img-box:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.sliderInBrand .containerInBrand{
+    padding:0 15px;
+    max-width:1400px ;
+    margin:0 auto;
+}
+
+.brand_card{
+    padding:50px 0px;
+}
+
+
+/* electronic-products */
+.electronics-product{
+    max-height: 194px;
+    padding: 34px;
+    object-fit:contain;
+}
+
+.product-card{
+    
+   max-height:384px;
+} 
+
+
+/* footer */
+.f-d p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* header{
+    background: linear-gradient(to right, rgb(253, 253, 253) 15% , rgb(255, 236, 32) 10% );
+    
+} */
+
+.nav-item{
+    padding-left:20px;
+    gap:3px
+}
+.nav-link{
+    text-align:center;
+    padding-left: 12px;
+    
+    
+    
+}
+
+.ele-active{
+    /* padding-left: 12px; */
+    width: 161px;
+}
+
+.tesla{
+    margin-left: 50px
+}
+
+.tata{
+    
+    width: 90px;
+
+}

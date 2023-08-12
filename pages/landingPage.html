@@ -1,0 +1,1200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="/asset/js/landingPage.js" defer></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/asset/css/landingPage.css">
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js "></script>
+    <title>SHOPKART-MAIN PAGE</title>
+</head>
+
+<body onload="getProductList();">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-expand-md navbar-light bg-primary head">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="javascript:void(0)">
+                    <img src="/asset/images/logo/logo.png" alt="sorry" class="logo rounded-circle">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mynavbar">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white pt-2 mx-2" href="#" role="button"
+                                data-bs-toggle="dropdown">
+
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-x-diamond-fill icon1" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.05.435c-.58-.58-1.52-.58-2.1 0L4.047 3.339 8 7.293l3.954-3.954L9.049.435zm3.61 3.611L8.708 8l3.954 3.954 2.904-2.905c.58-.58.58-1.519 0-2.098l-2.904-2.905zm-.706 8.614L8 8.708l-3.954 3.954 2.905 2.904c.58.58 1.519.58 2.098 0l2.905-2.904zm-8.614-.706L7.292 8 3.339 4.046.435 6.951c-.58.58-.58 1.519 0 2.098l2.904 2.905z" />
+                                </svg> Departments
+                            </a>
+                            <ul class="dropdown-menu">
+
+                                <li><a class="dropdown-item" href="#">Savings & Featured Shops</a></li>
+                                <li><a class="dropdown-item" href="/pages/ElectronicsMainPage.html">Electronics</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Grocery</a></li>
+
+                                <li><a class="dropdown-item" href="#">Clothing,Shoes and Accesories</a></li>
+                                <li><a class="dropdown-item" href="#">Home,Furniture & Appliances</a></li>
+                                <li><a class="dropdown-item" href="#">baby & Toys</a></li>
+                                <li><a class="dropdown-item" href="#">Home Improvement</a></li>
+
+                                <li><a class="dropdown-item" href="#">Pharmacy & Health Witness</a></li>
+                                <li><a class="dropdown-item" href="#">Sports</a></li>
+                                <li><a class="dropdown-item" href="#">Movie,Music & Books</a></li>
+                            </ul>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white pt-2 mx-2" href="#" role="button"
+                                data-bs-toggle="dropdown">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-columns icon2" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V2zm8.5 0v8H15V2H8.5zm0 9v3H15v-3H8.5zm-1-9H1v3h6.5V2zM1 14h6.5V6H1v8z" />
+                                </svg> Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Health Services</a></li>
+                                <li><a class="dropdown-item" href="#">Finnacial Services</a></li>
+                                <li><a class="dropdown-item" href="#">Community & Giving</a></li>
+                            </ul>
+                        </li>
+                        </li>
+
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control width .col-lg-*  search  mx-2" type="text" placeholder="Search">
+                        <!-- <button class="btn btn-primary" type="button">Search</button> -->
+                    </form>
+                    <ul class="navbar-nav ">
+                        <!-- <li class="nav-item">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white pt-2 mx-2 kuttarBacche" href="#" role="button"
+                                data-bs-toggle="dropdown">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-arrow-repeat icon3" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z" />
+                                    <path fill-rule="evenodd"
+                                        d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z" />
+                                </svg> Reorder
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="#">Reorder</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Lists</a></li>
+                                <li><a class="dropdown-item" href="#">Register</a></li>
+                                <li><a class="dropdown-item" href="#">Purchase History</a></li>
+                            </ul>
+                        </li>
+                        </li> -->
+
+                        <li class="nav-item">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white pt-2 mx-2 " id="gmail" href="#" role="button"
+                                data-bs-toggle="dropdown">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-person-fill icon4" viewBox="0 0 16 16">
+                                    <path
+                                        d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                                </svg>
+                                <span id="signin">Sign In</span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item " href="/pages/signin_page.html"><button type="button"
+                                            class="rounded-pill mx-2 my-1  px-3  btn btn-primary ">Sign In</button></a>
+                                </li>
+                                <li><a class="dropdown-item" href="/pages/registration_page.html"><button type="button"
+                                             class="rounded-pill mx-2 my-1  px-3  btn btn-primary ">Create An Account</button></a></li>
+                                <li><a class="dropdown-item"><button type="button"
+                                                class="rounded-pill mx-2 my-1  px-3  btn btn-primary " onclick="signOut();">Sign Out</button></a></li>
+   
+
+                            </ul>
+                        </li>
+                        </li>
+                        <li class="nav-item">
+                            <!-- hello -->
+
+                            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" onclick="clickCart();">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-bag-check-fill icon5" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M10.5 3.5a2.5 2.5 0 0 0-5 0V4h5v-.5zm1 0V4H15v10a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V4h3.5v-.5a3.5 3.5 0 1 1 7 0zm-.646 5.354a.5.5 0 0 0-.708-.708L7.5 10.793 6.354 9.646a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+                                </svg>
+                                Cart
+                            </button>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div class="container">
+
+        <!-- 1st part -->
+
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators text-dark">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner ">
+                <div class="carousel-item active ">
+                    <img src="/asset/images/LandingPagePhoto/shirtsPoster.webp" alt="Shirt Poster" class="d-block"
+                        style="width:100%;height:417px">
+                    <!-- <div class="carousel-caption">
+                        <h3>Los Angeles</h3>
+                        <p>We had such a great time in LA!</p>
+                    </div> -->
+                </div>
+                <div class="carousel-item carouselItem1">
+                    <img src="/asset/images/LandingPagePhoto/toysPoster.jpg" alt="Toys" class="d-block"
+                        style="width:100%;height:417px">
+                    <!-- <div class="carousel-caption">
+                        <h3>Chicago</h3>
+                        <p>Thank you, Chicago!</p>
+                    </div> -->
+                </div>
+                <div class="carousel-item carouselItem1">
+                    <img src="/asset/images/LandingPagePhoto/shoes.jpg" alt="Shoes" class="d-block"
+                        style="width:100% ; height:417px">
+                    <!-- <div class="carousel-caption">
+                        <h3>New York</h3>
+                        <p>We love the Big Apple!</p>
+                    </div> -->
+                </div>
+                <div class="carousel-item carouselItem1">
+                    <img src="/asset/images/LandingPagePhoto/sale-dresspic.jpg" alt="Ladies wear" class="d-block"
+                        style="width:100%;height:417px">
+                    <!-- <div class="carousel-caption">
+                        <h3>New York</h3>
+                        <p>We love the Big Apple!</p>
+                    </div> -->
+                </div>
+                <div class="carousel-item carouselItem1">
+                    <img src="/asset/images/LandingPagePhoto/kitchen.jpg" alt="Kitchen" class="d-block"
+                        style="width:100%;height:417px">
+                    <!-- <div class="carousel-caption">
+                        <h3>New York</h3>
+                        <p>We love the Big Apple!</p>
+                    </div> -->
+                </div>
+                <div class="carousel-item carouselItem1">
+                    <img src="/asset/images/LandingPagePhoto/ElectronicGadgetPic.jpg" alt="Electronics Gadget Pic"
+                        class="d-block" style="width:100%;height:417px">
+                    <!-- <div class="carousel-caption">
+                        <h3>New York</h3>
+                        <p>We love the Big Apple!</p>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+
+        <!-- median -->
+        <div class="mx-2 my-2">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 p-0 border border-white ">
+                    <div class="pickUpAndDelivery ">
+                        <div class="pickUpAndDeliveryLink p-2 ms-2 ">
+                            <h3><a href="#" class="text-light text-underline-hover"> Pick Up and Delivery <i
+                                        class="bi bi-geo-alt text-light"></i></a></h3>
+                        </div>
+                        <div class="pickUpAndDeliveryButton p-2 ms-2">
+                            <button type="button" class="btn  btn-outline-secondary btn-lg my-3">See More</button>
+                        </div>
+                    </div>
+
+                    <div class="service d-flex justify-content-around p-2 mt-1">
+
+                        <div class="serviceCar mx-2 mt-4">
+                            <img src="/asset/images/LandingPagePhoto/car_service.png" alt="car"
+                                class="serviceImg ms-3 " />
+                            <p class="fw-bold">Car Service</p>
+                        </div>
+                        <div class="serviceAC mx-2 mt-4">
+                            <img src="/asset/images/LandingPagePhoto/air-conditionerService.png" alt="car"
+                                class="serviceImg ms-2" />
+
+                            <p class="fw-bold">AC Service</p>
+                        </div>
+                        <div class="serviceHealth mx-2 mt-4">
+                            <img src="/asset/images/LandingPagePhoto/healthcare_service.png" alt="car"
+                                class="serviceImg ms-4" />
+
+                            <p class="fw-bold">Health Service</p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="col-12 col-xs-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 summerCollection p-0 border border-white ps-sm-2 px-xs-2">
+                    <!-- <p>Hello Everyone</p> -->
+                    <h5 class="text-center ">Summer Collections</h5>
+                    <div class="row ">
+                        <div
+                            class="d-flex flex-wrap justify-content-lg-around justify-content-md-around justify-content-sm-around justify-content-xs-around mt-2 ms-sm-2 p-2">
+                            <!-- <p>Hello Everyone</p> -->
+                            <div class="">
+                                <img src="/asset/images/LandingPagePhoto/t-shirt.webp" alt="t shirt "
+                                    class="rounded-circle summerCollectionImage ms-3" />
+                                <p class="fw-bold ms-4 ps-3 ">T-Shirt</p>
+                            </div>
+                            <div>
+                                <img src="/asset/images/LandingPagePhoto/ac.jpg" alt="t shirt "
+                                    class="rounded-circle summerCollectionImage ms-4  " />
+                                <p class="ms-5 ps-3 fw-bold ">AC</p>
+                            </div>
+                        </div>
+                        <div
+                            class="d-flex flex-wrap justify-content-lg-around justify-content-md-around justify-content-sm-around justify-content-xs-around ms-sm-2  p-2">
+                            <div class="ms-sm-2">
+                                <img src="/asset/images/LandingPagePhoto/ladiesware.jpg" alt="ladies "
+                                    class="rounded-circle summerCollectionImage ms-1 " />
+                                <p class=" fw-bold ms-2 ps-2">Ladies Wear</p>
+                            </div>
+                            <div>
+                                <img src="/asset/images/LandingPagePhoto/babies_wear.jpg " alt="babies "
+                                    class="rounded-circle summerCollectionImage ms-4 ps-1 ps-sm-2" />
+                                <p class="ms-4 fw-bold ps-2 ">Babies Wear</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 bestSection p-0 border border-white">
+                    <!-- <p>Hello Everyone</p> -->
+                    <h5 class="text-center ">Best Sections</h5>
+                    <div class="row ">
+                        <div
+                            class="d-flex flex-wrap justify-content-lg-around justify-content-md-around  justify-content-sm-around justify-content-xs-around  mt-2 ms-sm-2 p-2">
+                            <!-- <p>Hello Everyone</p> -->
+                            <div class="">
+                                <img src="/asset/images/LandingPagePhoto/Kitchen-Accessories.jpg.jpeg" alt="t shirt "
+                                    class="rounded-circle summerCollectionImage ms-3" />
+                                <p class="fw-bold ms-3 ps-2 ">Home Wear</p>
+                            </div>
+                            <div>
+                                <img src="/asset/images/LandingPagePhoto/toys.webp" alt="t shirt "
+                                    class="rounded-circle summerCollectionImage ms-4  " />
+                                <p class="ms-5 ps-3 fw-bold ">Toys</p>
+                            </div>
+                        </div>
+                        <div
+                            class="d-flex flex-wrap justify-content-lg-around justify-content-md-around justify-content-sm-around justify-content-xs-around ms-sm-2  p-2">
+                            <div class="ms-sm-2">
+                                <img src="/asset/images/LandingPagePhoto/mobilesPoster.jpg" alt="ladies "
+                                    class="rounded-circle summerCollectionImage ms-1 " />
+                                <p class=" fw-bold ms-2 ps-2">Mobile Phones</p>
+                            </div>
+                            <div>
+                                <!-- <img src="//asset/images/LandingPagePhoto//babies_wear.jpg " alt="babies " class="rounded-circle summerCollectionImage ms-4 ps-1 ps-sm-2" />
+                                <p class="ms-4 fw-bold ps-2 ">Babies Wear</p> -->
+                                <button class="rounded-circle fs-4 p-3 mt-3"><a href="#"
+                                        class="text-dark text-decoration-none">See All</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <!-- 30 days trial -->
+        <div class="my-2">
+            <div id="shipping">
+
+                <p class="shippingText">Membership get free shipping </p>
+
+
+                <p class="shippingText">30 days free trial!!</p>
+
+            </div>
+        </div>
+
+        <!-- <div class="bestItems">
+            <h2 class="text-primary fw-bold my-3">Best Selling Items</h2>
+            <div class=" swiper bg-light rounded-1 p-2">
+                <div class="slide-content1">
+                    <div class="card-wrapper swiper-wrapper " id="popularItems">
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="/asset/images/LandingPagePhoto/wintershirt.png" alt="" class="card-img">
+
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name" id="product_price">&#8377;2099.00</h2>
+                                <p class="description" id="product_details">Fine quality cotton,well designable T-Shirt</p>
+                                <p class="description"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-half"></i></p>
+                                <button class="button" onclick="addToCart();"><i class="bi bi-cart-plus"></i>Add To Cart</button>
+                            </div>
+                        </div> -->
+                        <!-- <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="/asset/images/LandingPagePhoto/shoe1.png" alt="" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name" id="product_price">&#8377;2399.00</h2>
+                                <p class="description" id="product_details">Best in prices shoes to keep your feet warm</p>
+                                <p class="description"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-half"></i></p>
+                                <button class="button"  ><i class="bi bi-cart-plus"></i>Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="/asset/images/LandingPagePhoto/watch1.png" alt="" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name" id="product_price">&#8377;349.00</h2>
+                                <p class="description" id="product_details">Best watches to keep updated with</p>
+                                <p class="description"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-half"></i></p>
+
+                                <button class="button" ><i class="bi bi-cart-plus"></i>Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="/asset/images/LandingPagePhoto/jeans1.png" alt="" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name" id="product_price">&#8377;1000.00</h2>
+                                <p class="description" id="product_details">Stylish boxer to make you look cool</p>
+                                <p class="description"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-half"></i></p>
+
+                                <button class="button" ><i class="bi bi-cart-plus"></i>Add To Cart</button>
+                            </div>
+                        </div>
+                        <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="/asset/images/LandingPagePhoto/shoe2.png" alt="" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name" id="product_price">&#8377;1500.00</h2>
+                                <p class="description" id="product_details">Best in-purchases casual shoes</p>
+                                <p class="description"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-half"></i></p>
+
+
+                                <button class="button" onclick="addToCart();"><i class="bi bi-cart-plus"></i>Add To Cart</button>
+                            </div>
+                        </div>
+                         <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="/asset/images/LandingPagePhoto/watch2.png" alt="" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name" id="product_price">&#8377;1500.00</h2>
+                                <p class="description" id="product_details">Best Formal Watches to keep updated</p>
+                                <p class="description"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-half"></i></p>
+
+
+                                <button class="button"><i class="bi bi-cart-plus"></i>Add To Cart</button>
+                            </div>
+                        </div> --> 
+                        <!-- <div class="card swiper-slide">
+                            <div class="image-content">
+                                <span class="overlay"></span>
+
+                                <div class="card-image">
+                                    <img src="/asset/images/LandingPagePhoto/watch3.png" alt="" class="card-img">
+                                </div>
+                            </div>
+
+                            <div class="card-content">
+                                <h2 class="name" id="product_price">&#8377;2000.00</h2>
+                                <p class="description" id="product_details">Best dust-resistent military watches for sale</p>
+                                <p class="description"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                        class="bi bi-star-half"></i></p>
+
+
+                                <button class="button" ><i class="bi bi-cart-plus"></i>Add To Cart</button>
+                            </div>
+                        </div>
+
+                        <div class="card swiper-slide">
+
+                            <div class="card-content" style="height: 398px;">
+                                <button class="button" style=" margin-top: 164px;
+                        font-size: 24px;">See All</button>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="swiper-button-next swiper-navBtn"></div>
+                <div class="swiper-button-prev swiper-navBtn"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div> -->
+
+        <div>
+            <section id="slider">
+                <div class="container">
+                    <div class="subcontainer">
+                        <div class="slider-wrapper">
+                            <div>
+                                <h2 class="text-primary fs-2 fw-bold">Favourite Brandings</h2>
+                            </div>
+                            <br>
+                            <div class="my-slider">
+                                <div>
+                                    <div class="slide">
+                                        <div class="slide-img img-1">
+                                            <a href="#">Show More
+                                            </a>
+                                        </div>
+                                        <br>
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="slide">
+                                        <div class="slide-img img-2">
+                                            <a href="#">Show More
+                                            </a>
+                                        </div>
+                                        <br>
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="slide">
+                                        <div class="slide-img img-3">
+                                            <a href="#">Show More
+                                            </a>
+                                        </div>
+                                        <br>
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="slide">
+                                        <div class="slide-img img-4">
+                                            <a href="#">Show More
+                                            </a>
+                                        </div>
+                                        <br>
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="slide">
+                                        <div class="slide-img img-5">
+                                            <a href="#">Show More
+                                            </a>
+                                        </div>
+                                        <br>
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="slide">
+                                        <div class="slide-img img-6">
+                                            <a href="#">Show More
+                                            </a>
+                                        </div>
+                                        <br>
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="slide">
+                                        <div class="slide-img img-7">
+                                            <a href="#">Show More
+                                            </a>
+                                        </div>
+                                        <br>
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="slide">
+                                        <div class="slide-img img-8">
+                                            <a href="#">Show More
+                                            </a>
+                                        </div>
+                                        <br>
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="slide">
+                                        <div class="slide-img img-9">
+                                            <a href="#">Show More
+                                            </a>
+                                        </div>
+                                        <br>
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="slide">
+                                        <div class="slide-img img-10">
+                                            <a href="#">Show More
+                                            </a>
+                                        </div>
+                                        <br>
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="slide">
+                                        <div class="slide-img img-11">
+                                            <a href="#">Show More
+                                            </a>
+                                        </div>
+                                        <br>
+
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="slide">
+                                        <div class="slide-img img-12">
+                                            <a href="#">Show More
+                                            </a>
+                                        </div>
+                                        <br>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div>
+            <h2 class="text-primary fs-2 fw-bold my-2 mb-lg-4 mb-sm-3 mb-md-3">For 50% Off</h2>
+            <div class="row d-flex ">
+                <div class="card-wrapper col-lg-3 col-md-6 col-sm-12">
+                    <div class="card   for50Off ">
+                        <img src="/asset/images/LandingPagePhoto/grocery.jpg" alt="">
+                    </div>
+                    <h5 class="headingFor50Off"><a href="#">Grocery</a></h5>
+                </div>
+                <div class="card-wrapper col-lg-3 col-md-6 col-sm-12">
+                    <div class="card  for50Off ">
+                        <img src="/asset/images/LandingPagePhoto/amazon-electronics Pic.jpg" alt="">
+                    </div>
+                    <h5 class="headingFor50Off "><a href="#">Electronics</a></h5>
+                </div>
+                <div class="card-wrapper col-lg-3 col-md-6 col-sm-12">
+                    <div class="card  for50Off ">
+                        <img src="/asset/images/LandingPagePhoto/clothes.jpg" alt="">
+                    </div>
+                    <h5 class="headingFor50Off  "><a href="#">Cloths & Accessories</a></h5>
+                </div>
+                <div class="card-wrapper col-lg-3 col-md-6 col-sm-12">
+                    <div class="card for50Off ">
+                        <img src="/asset/images/LandingPagePhoto/shoes.jpg" alt="">
+                    </div>
+                    <h5 class=" headingFor50Off "><a href="#">Shoes</a></h5>
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+        <!-- 2nd part -->
+        <div class="mt-lg-2">
+            <div class="popularSportsItemHeader mb-lg-4 mb-md-3 mb-sm-3 ">
+                <h2 class="text-primary fw-bold my-3">Popular Sports Items</h2>
+            </div>
+            <div class="bg-light rowInPopularSportsItem my-2">
+
+                <div class="row d-flex">
+                    <div class="card-wrapper col-lg-3 col-md-6 col-sm-12 d-flex justify-content-around
+                my-lg-1 my-md-4 my-sm-3 ">
+                        <div class="card PopularSportsItem ">
+                            <img src="/asset/images/LandingPagePhoto/sports1.jpg" alt="sorry" class="mx-auto d-block">
+                            <h5 class="my-2 text-center"><a href="#"
+                                    class="text-center text-primary text-decoration-none">Sports Items</a></h5>
+                        </div>
+
+
+                    </div>
+                    <div
+                        class="card-wrapper col-lg-3 col-md-6 col-sm-12 d-flex justify-content-around my-lg-1 my-md-4 my-sm-3">
+                        <div class="card  PopularSportsItem ">
+                            <img src="/asset/images/LandingPagePhoto/sports2.jpg" alt="sorry" class="mx-auto d-block">
+                            <h5 class="my-2 text-center"><a href="#"
+                                    class="text-center text-primary text-decoration-none">Sports Wear</a></h5>
+                        </div>
+
+                    </div>
+                    <div
+                        class="card-wrapper col-lg-3 col-md-6 col-sm-12 d-flex justify-content-around my-lg-1 my-md-4 my-sm-3">
+                        <div class="card  PopularSportsItem  ">
+                            <img src="/asset/images/LandingPagePhoto/sports3.jfif" alt="sorry" class="mx-auto d-block">
+                            <h5 class="my-2  text-center"><a href="#"
+                                    class="text-center text-primary text-decoration-none">Sports Drinks</a></h5>
+                        </div>
+
+                    </div>
+                    <div
+                        class="card-wrapper col-lg-3 col-md-6 col-sm-12 d-flex justify-content-around my-lg-1 my-md-4 my-sm-3 ">
+                        <div class="card PopularSportsItem s">
+                            <button class="btn btn-outline-primary w-50 rounded-3 text-center m-auto">See More</button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!-- cashback -->
+        <div class="cashback">
+            <div>
+                <i class="bi bi-wallet text-primary fw-bold"></i>
+                <p class="text-primary fw-bold ">Earn 5% cashback on ShopKart.com <a href="#">Learn More</a></p>
+            </div>
+        </div>
+        <!-- Home Organization         -->
+        <div>
+            <div class="mt-lg-4">
+                <h2 class="text-primary fw-bold my-3">Popular in Home Organization
+                </h2>
+                <div class="row">
+                    <div class="col-12 m-auto">
+                        <div class="owl-carousel owl-theme" id="homeOrganizationCatagory">
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- health -->
+        <div>
+            <div class="healthHeading mb-4">
+                <h2 class="text-primary fw-bold my-3">Health & Wellness</h2>
+            </div>
+            <div class="row totalHealth" id="healthCatagory">
+                <div class="card col-lg-4 col-md-4 col-1 helathCard1" style="padding-left:2px">
+                    <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-3432/k2-_12c7e138-42f9-4151-a531-10e8d1a3f5e2.v1.jpg?odnHeight=222&odnWidth=395&odnBg=FFFFFF"
+                        class="card-img-top" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">COVID-19 equipments</h5>
+                        <p class="card-text">Now available at ShopKart.com</p>
+                        <a href="#" class="btn btn-outline-primary">Shop Now</a>
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-4 col-1 helathCard2">
+                    <img src="/asset/images/LandingPagePhoto/drugs.jfif" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Medicines</h5>
+                        <p class="card-text">Different medicines are present at ShopKart.com</p>
+                        <a href="#" class="btn btn-outline-primary">Shop Now</a>
+                    </div>
+                </div>
+                <div class="card col-lg-4 col-md-4 col-1 helathCard3">
+                    <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-d7eb/k2-_feec3339-3120-45bf-9ce7-e1fad1c9eccd.v1.jpg?odnHeight=222&odnWidth=395&odnBg=FFFFFF"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Put your health first</h5>
+                        <p class="card-text">Find medicine,vitamins,first aid & more wellness picks.</p>
+                        <a href="#" class="btn btn-outline-primary">Shop Now</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- electronics -->
+        <div class="my-lg- mt-md-3 mt-sm-2">
+            <h2 class="text-primary fw-bold my-3">Electronics & Accessories
+            </h2>
+            <div class="row">
+                <div class="col-12 m-auto" >
+                <div class="owl-carousel owl-theme " id="electronicsCatagory">
+                         <div class="item">
+                            <div class="card border-0 shadow electronicsItem">
+                                <img src="https://rukminim1.flixcart.com/image/416/416/kae95e80/television/f/6/y/realme-tv-32-original-imafrz79pweqeafh.jpeg?q=70"
+                                    alt="" class="card-img-top">
+                                <div class="card-body electronicsItemBody">
+                                    <div class="card-title text-center ">
+                                        <h4>₹17,490</h4>
+                                        <p>
+
+                                            Compare Connect to Store LG 81.28cm (32 Inch) HD Ready LED Smart TV ( Black)
+                                        </p>
+                                        <p class="text-warning"><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></p>
+
+                                        <button class="btn btn-outline-primary"><i class="bi bi-cart-plus"></i>Add To
+                                            Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="item">
+                            <div class="card border-0 shadow electronicsItem">
+                                <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1624459877/Croma%20Assets/Computers%20Peripherals/Tablets%20and%20iPads/Images/235539_lsmxgg.png/mxw_2048,f_auto"
+                                    alt="#" class="card-img-top">
+                                <div class="card-body electronicsItemBody">
+                                    <div class="card-title text-center">
+                                        <h4>₹14,518.00</h4>
+                                        <p>Samsungg Galaxy Tab A7 Lite WiFi+4G Android Tablet (Android 11, Grey)</p>
+                                        <p class="text-warning"><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></p>
+
+                                        <button class="btn btn-outline-primary"><i class="bi bi-cart-plus"></i>Add To
+                                            Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card border-0 shadow electronicsItem">
+                                <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1639812357/Croma%20Assets/Communication/Mobiles/Images/246253_nqfxk1.png/mxw_2048,f_auto"
+                                    alt="" class="card-img-top">
+                                <div class="card-body electronicsItemBody">
+                                    <div class="card-title text-center">
+                                        <h4>₹17,999.00</h4>
+                                        <p>Redmi Note 11T 5G (128GB ROM, 8GB RAM, MZB0A8PIN, Stardust White)</p>
+                                        <p class="text-warning"><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></p>
+
+                                        <button class="btn btn-outline-primary"><i class="bi bi-cart-plus"></i>Add To
+                                            Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="card border-0 shadow electronicsItem">
+                                <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1633329208/Croma%20Assets/Entertainment/Television/Images/244467_hqjovo.png/mxw_2048,f_auto"
+                                    alt="" class="card-img-top">
+                                <div class="card-body electronicsItemBody">
+                                    <div class="card-title text-center">
+                                        <h4>₹21,999.00</h4>
+                                        <p> OnePlus Y Series 100cm (40 Inch) Full HD LED Android Smart TV
+                                            (OxygenPlay,Black)</p>
+                                        <p class="text-warning"><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></p>
+                                        <button class="btn btn-outline-primary"><i class="bi bi-cart-plus"></i>Add To
+                                            Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="card border-0 shadow electronicsItem">
+                                <img src="https://d2d22nphq0yz8t.cloudfront.net/88e6cc4b-eaa1-4053-af65-563d88ba8b26/https://media.croma.com/image/upload/v1605131214/Croma%20Assets/Small%20Appliances/Hair%20Care/Images/8984022384670.png/mxw_2048,f_auto"
+                                    alt="" class="card-img-top">
+                                <div class="card-body electronicsItemBody">
+                                    <div class="card-title text-center">
+                                        <h4>₹1,349.00</h4>
+                                        <p>
+                                            Shop with Video Havells Unisex Hair Dryer (HD3181, Black)</p>
+                                        <p class="text-warning"><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i
+                                                class="bi bi-star-fill"></i><i class="bi bi-star-half"></i></p>
+                                        <button class="btn btn-outline-primary"><i class="bi bi-cart-plus"></i>Add To
+                                            Cart</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fashion -->
+        <div>
+            <div class="my-3">
+                <h2 class="text-primary fw-bold my-3">Fashion
+                </h2>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="owl-carousel owl-theme" id="FashionCatagory">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- toys -->
+        <div>
+            <div class=" my-3">
+                <h1 class="text-primary fw-bold my-3">Toys & Others
+                </h1>
+                <div class="row bg-light">
+                    <div class="col-12">
+                        <div class="owl-carousel owl-theme" id="babiesAndToysCatagory">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!-- sharing our values -->
+        <div>
+            <div>
+                <div class="sharingOurValueCustomer my-4">
+                    <h2 class="text-primary fw-bold my-3">Our Customers</h2>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-3 col-md-4 col-sm-1">
+                        <div class="card  sharingOurValue">
+                            <img src="https://img.etimg.com/thumb/msid-72342792,width-640,resizemode-4,imgsize-578399/meet-the-man.jpg"
+                                class="card-img-top sharingOurValueImg" alt="sorry">
+                            <div class="card-body bg-primary text-light">
+                                <p class="card-text text-lg-center text-md-center text-sm-center">&quot;Lorem ipsum
+                                    dolor sit, amet consectetur adipisicing elit. Rerum tenetur adipisci iusto,
+                                    laboriosam &quot;</p>
+                                <p class="text-lg-center">-Srijan Giri from <cite>Kolkata</cite></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-3 col-md-4 col-sm-1">
+                        <div class="card  sharingOurValue">
+                            <img src="https://regencyhealthcare.in/wp-content/uploads/2022/03/Dr-Anurag-Mishra-1.jpg"
+                                class="card-img-top sharingOurValueImg" alt="...">
+                            <div class="card-body bg-primary text-light">
+                                <p class="card-text text-lg-center text-md-center text-sm-center">&quot;Lorem ipsum
+                                    dolor sit, amet consectetur adipisicing elit. Rerum tenetur adipisci iusto,
+                                    laboriosam &quot;</p>
+                                <p class="text-lg-center">-Alap Mandal from <cite>Kolkata</cite></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-3 col-md-4 col-sm-1">
+                        <div class="card  sharingOurValue">
+                            <img src="https://thumbs.dreamstime.com/b/cheerful-young-indian-woman-outdoors-close-up-82285569.jpg "
+                                class="card-img-top sharingOurValueImg " alt="... ">
+                            <div class="card-body bg-primary text-light">
+                                <p class="card-text text-lg-center text-md-center text-sm-center ">&quot;Lorem ipsum
+                                    dolor sit, amet consectetur adipisicing elit. Rerum tenetur adipisci iusto,
+                                    laboriosam &quot;</p>
+                                <p class="text-lg-center ">-Sukriti Mazumder from <cite>Kolkata</cite></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-3 col-md-4 col-sm-1 ">
+                        <div class="card sharingOurValue " ">
+                            <img src="
+                            https://static9.depositphotos.com/1093689/1353/i/950/depositphotos_13534665-stock-photo-handsome-and-smart-indian-corporate.jpg " class="
+                            card-img-top sharingOurValueImg " alt=" ... ">
+                            <div class=" card-body bg-primary text-light ">
+                                <p class=" card-text text-lg-center text-md-center text-sm-center ">&quot;Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum tenetur adipisci iusto, laboriosam &quot;</p>
+                                <p class=" text-lg-center ">-Binay Pal from <cite>Kolkata</cite></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+
+
+
+
+        </div>  
+    <!-- feedback form -->
+        <div>     
+        <div class=" bg-light py-lg-3 mt-4 ">
+
+            <p class=" text-center ">We'd love to hear what you think!</p>
+            <!-- <button type=" button " class=" btn btn-primary m-auto d-block w-lg-50 w-md-25
+                            w-sm-0 " data-bs-toggle=" modal " data-bs-target=" #feedbackModal ">
+            Feedback Form
+            </button> -->
+            <button type=" button" class="btn btn-primary text-center" data-bs-toggle="modal" data-bs-target="#myModal"
+                            style="    margin-left:45%;">
+                            Feedback Form
+                            </button>
+                        </div>
+                    </div>
+                    <!-- The Modal -->
+
+
+                    <div class="modal fade" id="myModal">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+
+                                <!-- Modal Header -->
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Your Experience</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body modalFeedback">
+                                    <form class="row g-3 needs-validation" novalidate>
+                                        <div class="col-md-6">
+                                          <div class="form-outline">
+                                            <input type="text" class="form-control" id="validationCustom01" placeholder="Mark" required />
+                                            <label for="validationCustom01" class="form-label">First name</label>
+                                            <div class="valid-feedback">Looks good!</div>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                          <div class="form-outline">
+                                            <input type="text" class="form-control" id="validationCustom02" placeholder="Otto" required />
+                                            <label for="validationCustom02" class="form-label">Last name</label>
+                                            <div class="valid-feedback">Looks good!</div>
+                                          </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-outline">
+                                                <input type="email" class="form-control" id="validationCustom02" placeholder="abc@gmail.com" required />
+                                              <label for="validationCustom02" class="form-label">Email </label>
+                                              <div class="valid-feedback">Looks good!</div>
+                                            </div>
+                                          </div>
+                                        <div class="col-md-6">
+                                            <div class="form-outline">
+                                                <input type="text" class="form-control" id="validationCustom02" placeholder="Kolkata" required />
+                                                <label for="validationCustom02" class="form-label">Place</label>
+                                                <div class="valid-feedback">Looks good!</div>
+                                              </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-outline">
+                                                <div class="form-outline">
+                                                    <textarea class="form-control" id="validationTextarea" placeholder="Please write your experience" required></textarea>
+                                                    <label for="validationTextarea" class="form-label">Experience</label>
+                                                    <div class="invalid-feedback">Thank You</div>
+                                                  </div>
+                                   
+                                            </div>
+                                          </div>
+                                        <div class="col-12">
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
+                                            <label class="form-check-label" for="invalidCheck">Agree to terms and conditions</label>
+                                            <div class="invalid-feedback">You must agree before submitting.</div>
+                                          </div>
+                                        </div>
+                                      </form>
+
+                                </div>
+
+                                <!-- Modal footer -->
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal"
+                                        id="feedBackFormClose">Close</button>
+                                    <!-- <input type="submit" value="Submit" class="btn btn-primary" id="feedBackFormSubmit"> -->
+                                    <button type="button" class="btn btn-success" data-bs-dismiss="modal"
+                                        id="feedBackFormClose" value="submit" data-bs-toggle="modal"
+                                        data-bs-target="#myModal1">Submit</button>
+
+
+                       
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+
+
+                <footer>
+
+                    <div class="text-center bg-primary ">
+
+                        <div class="container p-4 text-light ">
+
+                            <section class="mb-4 ">
+                                <!-- Facebook -->
+                                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i
+                                        class="bi bi-facebook "></i></i></a>
+
+                                <!-- Twitter -->
+                                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i
+                                        class="bi bi-twitter "></i></i></a>
+
+                                <!-- Google -->
+                                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i
+                                        class="bi bi-google "></i></i></a>
+
+                                <!-- Instagram -->
+                                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i
+                                        class="bi bi-instagram "></i></i></a>
+
+                                <!-- Linkedin -->
+                                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i
+                                        class="bi bi-linkedin "></i></i></a>
+
+                                <!-- Github -->
+                                <a class="btn btn-outline-light btn-floating m-1 " href="#! " role="button "><i
+                                        class="bi bi-github "></i></i></a>
+                            </section>
+                            <section class="mb-4 ">
+                                <span class="d-flex flex-row text-center row ">
+                                    <div class="col-lg-2 ">
+                                        <p>All Departments</p>
+                                    </div>
+                                    <div class="col-lg-2 ">
+                                        <p>Store Directory</p>
+                                    </div>
+                                    <div class="col-lg-2 ">
+                                        <p>Our Company</p>
+                                    </div>
+                                    <div class="col-lg-2 ">
+                                        <p>Terms of Use</p>
+                                    </div>
+                                    <div class="col-lg-2 ">
+                                        <p>Privacy & Security</p>
+                                    </div>
+                                    <div class="col-lg-2 ">
+                                        <p>Sign up For Email</p>
+                                    </div>
+                                </span>
+                            </section>
+
+
+                            <!-- Copyright -->
+                            <div class="text-center p-3 text-light ">
+                                © 2020 Copyright:
+                                <a class="text-white " href="# ">ShopKart.com</a>
+                            </div>
+                            <!-- Copyright -->
+                        </div>
+                </footer>
+
+</body>
+
+<script>
+    
+</script>
+
+
+
+
+</html>
